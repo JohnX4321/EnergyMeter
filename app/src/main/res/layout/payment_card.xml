@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp" android:layout_height="400dp"
+    android:layout_gravity="center_vertical|center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Payment Details"
+            android:textSize="35sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/holo_purple" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Watts Consumed"
+                android:textSize="18sp"
+                style="@style/TextAppearance.AppCompat.Caption" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wattText"
+                android:text="00 W"
+                android:textSize="18sp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="80dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:textSize="18sp"
+                style="@style/TextAppearance.AppCompat.Caption" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/billText"
+                android:text="00 Rs"
+                android:textSize="18sp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="150dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Tax"
+                android:textSize="18sp"
+                style="@style/TextAppearance.AppCompat.Caption" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taxText"
+                android:text="00 Rs"
+                android:textSize="18sp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="190dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/holo_purple" />
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/thingsenzlogo" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/holo_purple" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Total Bill"
+                android:textSize="30sp"
+                style="@style/TextAppearance.AppCompat.Headline" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/totalText"
+                android:text="00 Rs"
+                android:textSize="30sp"
+                android:layout_gravity="end"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="100dp"
+                android:foregroundGravity="right" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/deepPurple"
+            android:text="Pay"
+            android:id="@+id/paymentBtn"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
